@@ -21,7 +21,7 @@ addLayer("c", {
         baseAmount() {return player.points}, // Get the current amount of baseResource
         type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
         exponent: 0.5, // Prestige currency exponent
-        base: 5, // Only needed for static layers, base of the formula (b^(x^exp))
+        // base: 5, // Only needed for static layers, base of the formula (b^(x^exp))
         roundUpCost: false, // True if the cost needs to be rounded up (use when baseResource is static?)
         canBuyMax() {}, // Only needed for static layers with buy max
         gainMult() { // Calculate the multiplier for main currency from bonuses
